@@ -3,7 +3,7 @@
 <mule xmlns:json="http://www.mulesoft.org/schema/mule/json" 
   xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" 
   xmlns:spring="http://www.springframework.org/schema/beans" 
-  xmlns="http://www.mulesoft.org/schema/mule/core"
+  xmlns="http://www.mulesoft.org/schema/mule/core" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:http="http://www.mulesoft.org/schema/mule/http"
   xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
@@ -42,6 +42,9 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
   <flow name="componentExample">
         <component doc:name="Java">
             <singleton-object class="com.mulesoft.training.MuleComponent"/>
+        </component>
+        <component  doc:name="Java">
+            <singleton-object class="com.mulesoft.training.MuleLifecycleComponent"/>
         </component>
   </flow>
 

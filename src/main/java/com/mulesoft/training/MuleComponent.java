@@ -5,7 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import org.mule.api.annotations.param.*;
 
-public class MuleComponent {
+
+public class MuleComponent  {
     int count;
 	
 	public MuleComponent() {
